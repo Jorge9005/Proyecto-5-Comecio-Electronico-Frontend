@@ -2,13 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/js/bootstrap'
+// add bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './router/AppRouter';
+import Footer from './components/Footer';
+import Menu from './components/Menu';
+import { AuthProvider } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <p>Hola</p>
+    <AuthProvider>
+      <BrowserRouter>
+        <Menu />
+        <AppRouter />
+        <Footer />
+      </BrowserRouter>
+    </AuthProvider>
   </React.StrictMode>
 );
 
