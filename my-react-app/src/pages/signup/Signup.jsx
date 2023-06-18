@@ -4,6 +4,7 @@ import { registerService } from '../../services/Auth.services';
 import Swal from 'sweetalert2';
 import './signup.css';
 
+
 function Signup() {
 
     const [formSignUp, setFormSignUp] = useState({
@@ -45,16 +46,18 @@ function Signup() {
     return (
         <div>
             <section className="ftco-section">
+                <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+                <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-6 text-center mb-5">
-                            <h2 className="heading-section">¡REGÍSTRATE!</h2>
+                            <h2 className="heading-section">Sign Up #10</h2>
                         </div>
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-lg-10">
                             <div className="wrap d-md-flex">
-                                <div className="text-wrap p-4 p-lg-5 d-flex img d-flex align-items-end" style={{ backgroundImage: `url(${bg})` }}>
+                                <div className="text-wrap p-4 p-lg-5 d-flex d-flex " style={{ backgroundImage: `url(${bg})` }}>
                                     <div className="text w-100">
                                         <h2 className="mb-4">Welcome to signup form</h2>
                                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -79,7 +82,7 @@ function Signup() {
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
                                                     <label className="label" htmlFor="phone">Phone no.</label>
-                                                    <input type="text" className="form-control" placeholder="Phone" />
+                                                    <input type="text" className="form-control" placeholder="phone" />
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
@@ -132,8 +135,8 @@ function Signup() {
                 </div>
             </section>
             );
-            {'}'}
         </div>
+
     );
 }
 
