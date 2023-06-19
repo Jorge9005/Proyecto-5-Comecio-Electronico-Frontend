@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Titillium_Web;
+    src: url('../../fonts/Titillium_Web/TitilliumWeb-Italic.ttf') format('truetype');
+}
+
+footer{
+    margin-top: 3rem;
+    background-color: #000;
+    text-align: center;
+}
+
+.social-wrapper{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    align-self: center;
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Titillium_Web', sans-serif;
+
+}
+
+.footer-icons{
+    height: 4rem;
+}

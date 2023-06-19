@@ -51,7 +51,7 @@ function Signup() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-6 text-center mb-5">
-                            <h2 className="heading-section">Sign Up #10</h2>
+                            <h2 className="heading-section">¡REGÍSTRATE!</h2>
                         </div>
                     </div>
                     <div className="row justify-content-center">

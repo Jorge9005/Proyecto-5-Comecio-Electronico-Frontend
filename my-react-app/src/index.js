@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './router/AppRouter';
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 import Menu from './components/Menu';
 import { AuthProvider } from './context/AuthContext';
 
