@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './router/AppRouter';
 import Footer from './components/footer/Footer';
-import Menu from './components/Menu';
+import Menu from './components/navbar/Menu';
 import { AuthProvider } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

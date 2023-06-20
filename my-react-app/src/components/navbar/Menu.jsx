@@ -1,7 +1,8 @@
 import { useContext } from 'react';
-import { AuthContext } from '../context/AuthContext';
+import { AuthContext } from '../../context/AuthContext';
 import { NavLink } from 'react-router-dom';
 import { BsFillCartFill } from 'react-icons/bs';
+import './menu.css';
 
 
 function Menu() {
