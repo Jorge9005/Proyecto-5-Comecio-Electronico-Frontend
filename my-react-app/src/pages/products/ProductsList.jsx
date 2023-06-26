@@ -2,13 +2,11 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
 import { listProductsService } from '../../services/Products.services';
 
-
 const ProductList = () => {
 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        // Aqui deberia ir la carga de los productos reales....
         listProductsService()
         .then((res)=>{
             console.log(res.data.detalle);
@@ -20,9 +18,27 @@ const ProductList = () => {
     }, []);
 
 
-
     let addProductToCart = (product) => {
+        console.log("El producto es: ", product);
 
+        if(localStorage.getItem('cart')) {
+            let cart = JSON.parse(localStorage.getItem('cart'));
+            let productExists = false;
+            cart.forEach((item) => {
+                if (item._id === product._id) {
+                    item.quantity += 1;
+                    productExists = true;
+                }
+            });
+            if (!productExists) {
+                cart.push({...product, quantity: 1 });
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Producto agregado al carrito');
+        } else {
+            localStorage.setItem('cart', JSON.stringify([{ ...product, quantity: 1 }]));
+            alert('Producto agregado al carrito');
+        }
     }
 
 
