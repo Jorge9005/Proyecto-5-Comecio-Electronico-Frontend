@@ -50,11 +50,6 @@ function Signup() {
                 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-md-6 text-center mb-5">
-                            <h2 className="heading-section">¡REGÍSTRATE!</h2>
-                        </div>
-                    </div>
-                    <div className="row justify-content-center">
                         <div className="col-lg-10">
                             <div className="wrap d-md-flex">
                                 <div className="text-wrap p-4 p-lg-5 d-flex d-flex " style={{ backgroundImage: `url(${bg})` }}>
@@ -65,36 +60,36 @@ function Signup() {
                                 </div>
                                 <div className="login-wrap p-4 p-md-5">
                                     <h3 className="mb-3">Create an account</h3>
-                                    <form action="#" className="signup-form">
+                                    <form onSubmit={handleSubmit} className="signup-form">
                                         <div className="row">
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
-                                                    <label className="label" htmlFor="name">Full Name</label>
-                                                    <input type="text" className="form-control" placeholder="Full Name" />
+                                                    <label className="label">Full Name</label>
+                                                    <input type="text" className="form-control" placeholder="Full Name" onChange={handleInputChange} value={formSignUp.nombre} name='nombre' required/>
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
-                                                    <label className="label" htmlFor="email">Email Address</label>
-                                                    <input type="text" className="form-control" placeholder="johndoe@email.com" />
+                                                    <label className="label">Email Address</label>
+                                                    <input type="text" className="form-control" placeholder="Correo@email.com" onChange={handleInputChange} value={formSignUp.email} name='email' required/>
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
-                                                    <label className="label" htmlFor="phone">Phone no.</label>
-                                                    <input type="text" className="form-control" placeholder="phone" />
+                                                    <label className="label">DOB</label>
+                                                    <input type="date" className="form-control" placeholder="Phone" />
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
-                                                    <label className="label" htmlFor="password">Password</label>
+                                                    <label className="label">Password</label>
                                                     <input type="password" className="form-control" placeholder="Password" />
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
-                                                    <label className="label" htmlFor="website">Website</label>
-                                                    <input type="text" className="form-control" placeholder="Website" />
+                                                    <label className="label">Password Confirmation</label>
+                                                    <input type="password" className="form-control" placeholder="Password Confirmation" />
                                                 </div>
                                             </div>
                                             <div className="col-md-12 my-4">

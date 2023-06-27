@@ -49,61 +49,36 @@ function Login() {
     }
 
     return (
-        <section className="ftco-section">
-            <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet"/>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-md-6 text-center mb-5">
-                        <h2 className="heading-section">Login #03</h2>
-                    </div>
-                </div>
-                <div className="row justify-content-center">
-                    <div className="col-md-7 col-lg-12 ">
-                        <div className="login-wrap p-4 p-md-5">
-                            <div className="d-flex">
-                                <div className="w-100">
-                                    <h3 className="mb-4">Sign In</h3>
-                                </div>
-                                <div className="w-100">
-                                    <p className="social-media d-flex justify-content-end">
-                                        <a href="#" className="social-icon d-flex align-items-center justify-content-center"><span className="fa fa-facebook" /></a>
-                                        <a href="#" className="social-icon d-flex align-items-center justify-content-center"><span className="fa fa-twitter" /></a>
-                                    </p>
-                                </div>
-                            </div>
-                            <form action="#" className="login-form">
-                                <div className="form-group">
-                                    <div className="icon d-flex align-items-center justify-content-center"><span className="fa fa-user" /></div>
-                                    <input type="text" className="form-control rounded-left" placeholder="Username" required />
-                                </div>
-                                <div className="form-group">
-                                    <div className="icon d-flex align-items-center justify-content-center"><span className="fa fa-lock" /></div>
-                                    <input type="password" className="form-control rounded-left" placeholder="Password" required />
-                                </div>
-                                <div className="form-group d-flex align-items-center">
-                                    <div className="w-100">
-                                        <label className="checkbox-wrap checkbox-primary mb-0">Save Password
-                                            <input type="checkbox" defaultChecked />
-                                            <span className="checkmark" />
-                                        </label>
-                                    </div>
-                                    <div className="w-100 d-flex justify-content-end">
-                                        <button type="submit" className="btn btn-primary rounded submit">Login</button>
-                                    </div>
-                                </div>
-                                <div className="form-group mt-4">
-                                    <div className="w-100 text-center">
-                                        <p className="mb-1">Don't have an account? <a href="#">Sign Up</a></p>
-                                        <p><a href="#">Forgot Password</a></p>
-                                    </div>
-                                </div>
-                            </form>
+        <div className="login-wrap">
+            <div className="login-html">
+                <input id="tab-1" type="radio" name="tab" className="sign-in" defaultChecked /><label htmlFor="tab-1" className="tab">Sign In</label>
+                <input id="tab-2" type="radio" name="tab" className="sign-up" /><label htmlFor="tab-2" className="tab"></label>
+                <div className="login-form">
+                    <div className="sign-in-htm">
+                        <div className="group">
+                            <label htmlFor="user" className="label">Username</label>
+                            <input id="user" type="text" className="input" />
+                        </div>
+                        <div className="group">
+                            <label htmlFor="pass" className="label">Password</label>
+                            <input id="pass" type="password" className="input" data-type="password" />
+                        </div>
+                        <div className="group">
+                            <input id="check" type="checkbox" className="check" defaultChecked />
+                            <label htmlFor="check"><span className="icon" /> Keep me Signed in</label>
+                        </div>
+                        <div className="group">
+                            <input type="submit" className="button" defaultValue="Sign In" />
+                        </div>
+                        <div className="hr" />
+                        <div className="foot-lnk">
+                            <a href="#forgot">Forgot Password?</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
     );
 }
 

@@ -4,10 +4,11 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // add bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js'
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './router/AppRouter';
 import Footer from './components/footer/Footer';
-import Menu from './components/navbar/Menu';
+import Menu from './components/navbar/Menu.jsx';
 import { AuthProvider } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
