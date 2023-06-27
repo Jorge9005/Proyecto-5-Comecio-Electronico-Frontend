@@ -21,6 +21,7 @@ function Signup() {
             [event.target.name]: event.target.value
         })
     }
+
     const handleSubmit = (event) => {
         event.preventDefault();
         registerService(formSignUp)
@@ -64,7 +65,7 @@ function Signup() {
                                         <div className="row">
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
-                                                    <label className="label">Full Name</label>
+                                                    <label className="label">Name</label>
                                                     <input type="text" className="form-control" placeholder="Full Name" onChange={handleInputChange} value={formSignUp.nombre} name='nombre' required/>
                                                 </div>
                                             </div>
@@ -77,19 +78,19 @@ function Signup() {
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
                                                     <label className="label">DOB</label>
-                                                    <input type="date" className="form-control" placeholder="Phone" />
+                                                    <input type="date" className="form-control" placeholder="Phone" onChange={handleInputChange} value={formSignUp.dob} name='dob' required/>
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
                                                     <label className="label">Password</label>
-                                                    <input type="password" className="form-control" placeholder="Password" />
+                                                    <input type="password" className="form-control" placeholder="Password" onChange={handleInputChange} value={formSignUp.password} name='password' required/>
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
                                                 <div className="form-group d-flex align-items-center">
                                                     <label className="label">Password Confirmation</label>
-                                                    <input type="password" className="form-control" placeholder="Password Confirmation" />
+                                                    <input type="password" className="form-control" placeholder="Password Confirmation" onChange={handleInputChange} value={formSignUp.passwordConfirmation} name='passwordConfirmation' required/>
                                                 </div>
                                             </div>
                                             <div className="col-md-12 my-4">
@@ -104,7 +105,7 @@ function Signup() {
                                             </div>
                                             <div className="col-md-12">
                                                 <div className="form-group">
-                                                    <button type="submit" className="btn btn-secondary submit p-3">Create an account</button>
+                                                    <button type="submit" className="btn btn-secondary submit p-3">Signup</button>
                                                 </div>
                                             </div>
                                         </div>
