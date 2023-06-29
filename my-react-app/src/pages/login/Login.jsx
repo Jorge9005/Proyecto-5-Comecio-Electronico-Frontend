@@ -13,6 +13,7 @@ function Login() {
 
     const { setToken, login } = useContext(AuthContext);
 
+
     const handleInputChange = (event) => {
         // este va estableciendo el balor de los input al state del formulario
         setFormLogin({
@@ -39,13 +40,14 @@ function Login() {
             .catch((error) => {
                 // fallo el login
                 Swal.fire({
-                    icon: 'error',
+                    icon:'error',
                     title: 'Mensaje',
                     text: 'Error en login'
                 });
             })
         // como esto mando esto al backend estoy al 50%
     }
+
 
     return (
         <div className="login-wrap">
