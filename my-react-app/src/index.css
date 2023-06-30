@@ -5,3 +5,18 @@
     color: aliceblue;
     padding: 2rem;
 }
+
+
+/*---HOME---*/
+#menu{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 3rem 0px 3rem 0px;
+}
+
+.imagen-menuHome{
+    border-radius: 20rem;
+    width: 20rem;
+    height: 15rem;
+}
