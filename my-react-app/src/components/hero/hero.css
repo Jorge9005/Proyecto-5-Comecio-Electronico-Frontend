@@ -1,40 +1,15 @@
-
-.hero-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40rem;
+.btn-hero{
+    padding: 20px 60px;
+    background-color: black;
 }
 
-.hero{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    color: white;
-    background-image: url(../../images/wallpaper3.jpeg);
-    background-repeat: no-repeat;
+.hero-content{
+    padding-top: 4rem;
+    margin-left: 2rem;
+}
+
+.restaurant-hero{
+    background-image: url(../../images/hamburguesa.jpg);
     background-size: cover;
-    background-position: center center;
 }
 
-.hero-inner{
-    align-self: center;
-    text-align: center;
-}
-
-.hero .buttons{
-    display: inline-flex;
-    gap: 20px;
-}
-
-.btna{
-    width: 150px;
-    padding: 1em;
-    margin-top: 2rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #000;
-}

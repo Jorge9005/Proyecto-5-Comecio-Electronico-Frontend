@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import { NavLink } from 'react-router-dom';
 import { BsFillCartFill } from 'react-icons/bs';
+import Logo from '../../images/logo.png';
 
 
 function Menu() {
@@ -11,10 +12,10 @@ function Menu() {
 
     let publicMenu = () => {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <nav className="navbar navbar-expand-lg navbar-dark static-top" style={{backgroundColor: 'black'}}>
                 <div className="container">
                     <NavLink className="navbar-brand" to="/home">
-                        <img src="https://placeholder.pics/svg/150x50/888888/EEE/Logo" alt="..." height={36} />
+                        <img src={Logo} alt="Logo" height={40} />
                     </NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
@@ -45,10 +46,10 @@ function Menu() {
 
     let privateMenu = () => {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <nav className="navbar navbar-expand-lg navbar-dark static-top" style={{backgroundColor: 'black'}}>
                 <div className="container">
                     <NavLink className="navbar-brand" to="/home">
-                        <img src="https://placeholder.pics/svg/150x50/888888/EEE/Logo" alt="..." height={36} />
+                        <img src={Logo} alt="Logo" height={40} />
                     </NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />

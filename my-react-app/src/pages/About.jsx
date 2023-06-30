@@ -1,13 +1,14 @@
-import Hero from "../components/hero/Hero";
+import Hero from '../components/hero/Hero';
+import Logo from '../images/logo.png';
+
 const About = () => {
     return (
-        <>
+        <div>
             <Hero/>
-            <div style={{ padding: "5rem" }}>
-                <h1>Componente about</h1>
-                <img src="https://www.stelorder.com/wp-content/uploads/2021/09/portada-empresa.jpg" style={{ width: "100%", marginBottom: "1rem" }} alt="" />
+            <div className='about'>
+                <h1 className='text-center p-4'>ABOUT US</h1>
                 <h2>Lorem ipsum dolor</h2>
-                <p>
+                <p className='text-justify'>
                     Do officia elit do aliqua incididunt Lorem aliquip culpa consequat. Amet reprehenderit voluptate culpa elit cillum. Labore duis mollit ea magna et exercitation dolore tempor mollit pariatur cupidatat. Consequat amet cillum aute culpa sit pariatur mollit nisi ad irure. Commodo aliquip esse exercitation enim ullamco laborum. Eu fugiat ex dolore Lorem.
 
                     Mollit nisi laborum magna exercitation sit in. Fugiat et ut minim id fugiat officia ad non ut nulla sunt sit sunt tempor. Nisi in eiusmod aliquip sunt anim cupidatat cupidatat esse.
@@ -28,8 +29,11 @@ const About = () => {
 
                     Adipisicing ut ad ipsum ullamco ut laboris aute incididunt eu. Est est anim sint esse deserunt deserunt occaecat. Labore proident ut est dolor pariatur mollit pariatur. Eu eiusmod deserunt ut consectetur labore non exercitation ullamco.
                 </p>
+                <div className='text-center'>
+                    <img className='w-25' src={Logo} alt="" />
+                </div>
             </div>
-        </>
+        </div>
 
     );
 }

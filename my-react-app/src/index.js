@@ -11,6 +11,7 @@ import Footer from './components/footer/Footer';
 import Menu from './components/navbar/Menu.jsx';
 import { AuthProvider } from './context/AuthContext';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

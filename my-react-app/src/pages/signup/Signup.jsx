@@ -104,8 +104,8 @@ function Signup() {
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
-                                                <div className="form-group">
-                                                    <button type="submit" className="btn btn-secondary submit p-3">Signup</button>
+                                                <div className="form-group row">
+                                                    <button type="submit" className="btn btn-secondary submit p-3">SIGNUP</button>
                                                 </div>
                                             </div>
                                         </div>
