@@ -11,7 +11,7 @@ function Login() {
         password: ''
     });
 
-    const { setToken, login } = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
 
 
     const handleInputChange = (event) => {

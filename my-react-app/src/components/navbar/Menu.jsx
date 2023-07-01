@@ -66,7 +66,7 @@ function Menu() {
                                 <NavLink className="nav-link" to="/about">About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/profile" style={{ "textDecoration": "underline" }}>Profile</NavLink>
+                                <NavLink className="nav-link" to="/profile" style={{ "textDecoration": "underline" }}>{userInfo.nombre}</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/checkout"><BsFillCartFill/></NavLink>
