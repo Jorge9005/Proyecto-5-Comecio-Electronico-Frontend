@@ -116,9 +116,9 @@ function Signup() {
                                         </p>
                                         <p className="mb-3 text-center">Signup with this services</p>
                                         <p className="social-media d-flex justify-content-center">
-                                            <a href="#" className="social-icon google d-flex align-items-center justify-content-center"><span className="fa fa-google" /></a>
-                                            <a href="#" className="social-icon facebook d-flex align-items-center justify-content-center"><span className="fa fa-facebook" /></a>
-                                            <a href="#" className="social-icon twitter d-flex align-items-center justify-content-center"><span className="fa fa-twitter" /></a>
+                                            <a href="www.google.com" className="social-icon google d-flex align-items-center justify-content-center"><span className="fa fa-google" /></a>
+                                            <a href="www.google.com" className="social-icon facebook d-flex align-items-center justify-content-center"><span className="fa fa-facebook" /></a>
+                                            <a href="www.google.com" className="social-icon twitter d-flex align-items-center justify-content-center"><span className="fa fa-twitter" /></a>
                                         </p>
                                     </div>
                                     <div className="w-100 text-center">
